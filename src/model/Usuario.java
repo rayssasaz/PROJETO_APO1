@@ -8,6 +8,19 @@ public class Usuario {
 	private String senha;
 	private Integer codUsuario;
 	
+	public Usuario() {		//construtor vazio: nao recebe parametros de inicialização no new Usuario()
+		
+	}
+	
+	public Usuario(String nome, String telefone, String email, String cpf, String senha, Integer codUsuario) {
+		this.nome = nome;
+		this.telefone = telefone;
+		this.email = email;
+		this.cpf = cpf;
+		this.senha = senha;
+		this.codUsuario = codUsuario;
+	}
+	
 	// getters e setters
 	
 	public String getNome() {
@@ -47,7 +60,4 @@ public class Usuario {
 		this.codUsuario = codUsuario;
 	}
 	
-	
-	
-
 }

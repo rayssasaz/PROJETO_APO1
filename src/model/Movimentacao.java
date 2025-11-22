@@ -1,5 +1,50 @@
 package model;
 
-public class Movimentacao {
+import java.time.LocalDate;
 
+public class Movimentacao {
+	private String tipo; //entrada ou saída
+	private LocalDate data;
+	private Double valor;
+	private String categoria;
+	
+	
+	public Movimentacao() {
+		
+	}
+	
+	public Movimentacao(String tipo, LocalDate data, Double valor, String categoria) {
+		this.tipo = tipo;
+		this.data = data;
+		this.valor = valor;
+		this.categoria = categoria;
+	}
+	
+	
+	// getters e setters
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public LocalDate getData() {
+		return data;
+	}
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+	
 }

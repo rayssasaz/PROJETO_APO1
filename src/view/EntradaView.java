@@ -2,6 +2,14 @@ package view;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.TabItem;
+import org.eclipse.swt.widgets.Menu;
+import org.eclipse.swt.widgets.MenuItem;
+import org.eclipse.swt.custom.CTabFolder;
+import org.eclipse.swt.custom.CTabItem;
+import org.eclipse.swt.custom.CBanner;
 
 public class EntradaView {
 
@@ -40,9 +48,19 @@ public class EntradaView {
 	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(450, 300);
+		shell.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_TITLE_BACKGROUND));
+		shell.setSize(729, 443);
 		shell.setText("SWT Application");
+		
+		TabFolder tabFolder = new TabFolder(shell, SWT.NONE);
+		tabFolder.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_TITLE_BACKGROUND));
+		tabFolder.setBounds(40, 10, 633, 256);
+		
+		TabItem tbtmInserirEntrada = new TabItem(tabFolder, SWT.NONE);
+		tbtmInserirEntrada.setText("Inserir Entrada");
+		
+		TabItem tbtmAgendarEntrada = new TabItem(tabFolder, SWT.NONE);
+		tbtmAgendarEntrada.setText("Agendar Entrada");
 
 	}
-
 }

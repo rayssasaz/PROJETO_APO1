@@ -21,7 +21,7 @@ public class EntradaView {
 
 	protected Shell shlInserirEntrada;
 	private LocalResourceManager localResourceManager;
-	private Text text;
+	private Text textInserirValor;
 
 	/**
 	 * Launch the application.
@@ -65,9 +65,9 @@ public class EntradaView {
 		lblValorEntrada.setBounds(40, 40, 70, 33);
 		lblValorEntrada.setText("Valor");
 		
-		text = new Text(shlInserirEntrada, SWT.BORDER);
-		text.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 14, SWT.NORMAL)));
-		text.setBounds(176, 40, 174, 33);
+		textInserirValor = new Text(shlInserirEntrada, SWT.BORDER);
+		textInserirValor.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 12, SWT.NORMAL)));
+		textInserirValor.setBounds(176, 40, 174, 33);
 		
 		EntradaDAO dao = new EntradaDAO();
 		java.util.List<CategoriaEntrada> categorias = dao.listarCategorias()	;	
@@ -85,6 +85,8 @@ public class EntradaView {
 		comboCategoria.setBounds(176, 112, 174, 25);
 		comboCategoria.setText("Selecione a categoria");
 		
+		
+		
 		Label lblCategoriaEntrada = new Label(shlInserirEntrada, SWT.NONE);
 		lblCategoriaEntrada.setText("Categoria");
 		lblCategoriaEntrada.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 15, SWT.NORMAL)));
@@ -94,7 +96,7 @@ public class EntradaView {
 		btnNewButton.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 12, SWT.BOLD)));
 		btnNewButton.setBounds(329, 204, 185, 45);
 		btnNewButton.setText("Inserir Entrada");
-		
+			
 
 	}
 	private void createResourceManager() {

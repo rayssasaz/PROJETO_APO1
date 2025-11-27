@@ -72,7 +72,7 @@ public class AgendaView {
 		
 		text = new Text(shell, SWT.BORDER);
 		text.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 14, SWT.NORMAL)));
-		text.setBounds(177, 27, 151, 21);
+		text.setBounds(177, 28, 151, 30);
 		
 		Combo combo = new Combo(shell, SWT.NONE);
 		combo.setBounds(177, 84, 151, 23);
@@ -90,5 +90,4 @@ public class AgendaView {
 	private void createResourceManager() {
 		localResourceManager = new LocalResourceManager(JFaceResources.getResources(),shell);
 	}
-
 }

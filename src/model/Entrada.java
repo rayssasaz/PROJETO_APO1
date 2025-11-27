@@ -14,6 +14,11 @@ public class Entrada {
 	public Entrada() {
 		
 	}
+	
+	public Entrada(Double valor, Integer categoria) {
+		this.valor = valor;
+		this.categoria = categoria;
+	}
 
 	public Entrada(Double valor, LocalDate data, Integer categoria) {
 		this.valor = valor;

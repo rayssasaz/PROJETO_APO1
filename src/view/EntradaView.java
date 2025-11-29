@@ -132,8 +132,9 @@ public class EntradaView {
 					int codCategoria = categoriaSelecionada.getCod();
 					//String nomeCategoria = categoriaSelecionada.getNome(); // usa pra nada
 					
+					// cria um novo objeto entrada com as caracteristicas escolhidas pelo usuario
 					Entrada novaEntrada = new Entrada(valor, codCategoria);
-					
+					// insere no banco atraves da dao
 					dao.inserirEntrada(novaEntrada);
 					
 				}

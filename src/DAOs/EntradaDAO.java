@@ -9,7 +9,6 @@ import model.CategoriaEntrada;
 import model.Entrada;
 
 
-
 public class EntradaDAO {
 	private DBConnection connection;
 	

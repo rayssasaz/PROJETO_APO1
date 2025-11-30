@@ -65,6 +65,7 @@ public class EntradaView {
 		
 		// criando objetos de MessageBOX
 		MessageBox caixaWarning = new MessageBox(shlInserirEntrada, SWT.OK);
+		MessageBox caixaSucessfull = new MessageBox(shlInserirEntrada, SWT.OK);
 		
 		Label lblValorEntrada = new Label(shlInserirEntrada, SWT.NONE);
 		lblValorEntrada.setFont(localResourceManager.create(FontDescriptor.createFrom("Segoe UI", 15, SWT.NORMAL)));
@@ -136,6 +137,8 @@ public class EntradaView {
 					Entrada novaEntrada = new Entrada(valor, codCategoria);
 					// insere no banco atraves da dao
 					dao.inserirEntrada(novaEntrada);
+					caixaSucessfull.setMessage("Entrada inserida com sucesso!");
+					caixaSucessfull.open();
 					
 				}
 				catch(NumberFormatException ex){

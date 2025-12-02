@@ -1,10 +1,10 @@
 package model;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Movimentacao {
 	private String tipo; //entrada ou saída
-	private LocalDate data;
+	private Date data;
 	private Double valor;
 	private String categoria;
 	
@@ -13,7 +13,7 @@ public class Movimentacao {
 		
 	}
 	
-	public Movimentacao(String tipo, LocalDate data, Double valor, String categoria) {
+	public Movimentacao(String tipo, Date data, Double valor, String categoria) {
 		this.tipo = tipo;
 		this.data = data;
 		this.valor = valor;
@@ -28,11 +28,11 @@ public class Movimentacao {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public LocalDate getData() {
+	public Date getData() {
 		return data;
 	}
-	public void setData(LocalDate data) {
-		this.data = data;
+	public void setData(Date date) {
+		this.data = date;
 	}
 	public Double getValor() {
 		return valor;

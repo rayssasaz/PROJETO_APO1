@@ -63,7 +63,7 @@ public class TelaPrincipal {
 		
 		Button btnAbrirAgendaView = new Button(shlTelaPrincipal, SWT.NONE);
 		btnAbrirAgendaView.setBounds(50, 115, 160, 30);
-		btnAbrirAgendaView.setText("Agendar Nova Entrada");
+		btnAbrirAgendaView.setText("Inserir Agendamento");
 		
 		btnAbrirAgendaView.addSelectionListener( new SelectionAdapter() {
 			@Override

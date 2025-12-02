@@ -13,7 +13,7 @@ import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.jface.resource.FontDescriptor;
 import org.eclipse.swt.widgets.Text;
 
-import DAOs.EntradaDAO;
+import daos.EntradaDAO;
 import model.CategoriaEntrada;
 import model.Entrada;
 

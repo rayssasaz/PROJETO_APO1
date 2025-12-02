@@ -1,4 +1,4 @@
-package DAOs;
+package daos;
 
 import java.sql.*;
 import java.util.ArrayList;

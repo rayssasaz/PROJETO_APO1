@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class Conta {
 	private Double saldo;
 	private Integer codigo;
-	private ArrayList<Movimentacao> movimentacoes = new ArrayList<Movimentacao>();
+	private ArrayList<Movimentacao> movimentacoes = new ArrayList<Movimentacao>(); // agregação
+	
 	
 	public Conta() {
 		

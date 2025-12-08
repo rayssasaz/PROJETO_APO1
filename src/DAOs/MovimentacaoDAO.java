@@ -32,8 +32,10 @@ public class MovimentacaoDAO {
          //	ResultSet rs = statement.executeQuery();
             while (rs != null && rs.next()) {
                 Movimentacao mov = new Movimentacao();
-                String tipo = rs.getString("tipo"); // Pega o tipo para a busca
+                String tipo = rs.getString("tipo"); // Pega o tipo para a busca das categrias (entrada saida)
                 int codCategoria = rs.getInt("cod_categoria");
+                // categoria em movimentacao é string, deve-se buscar o nome da categoria
+                // no banco, na tabela movimentacoes, temos apenas o codigo da categoria, e nao seu nome
                 mov.setTipo(rs.getString("tipo"));
                 mov.setData(rs.getDate("data_movimentacao"));
                 mov.setValor(rs.getDouble("valor"));

@@ -221,15 +221,14 @@ public class AgendaView {
         });
     } // fim do create contents
     
-    // FUNÇÃO AUXILIAR PARA LISTAR AS CATEGORIAS DE ENTRADA E SAIDA
+    // FUNÇÃO AUXILIAR PRA LISTAR AS CATEGORIAS DE ENTRADA E SAIDA
     private void atualizarCategorias(String tipo) {
         cbCategoria.removeAll(); 
         
         if (tipo.equals("Entrada")) {
-            // Lógica semelhante ao Swing, mas o item adicionado é a string do nome (o combo swt so armazena nome)
+            // o combo swt so armazena nome
         		List<CategoriaEntrada> lista = entradaDAO.listarCategorias();
             for (CategoriaEntrada c : lista) {
-                // Adiciona o nome, mas tem que guardar o objeto para resgate
                 cbCategoria.add(c.getNome()); 
             }
             

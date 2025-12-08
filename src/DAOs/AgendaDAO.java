@@ -44,7 +44,7 @@ public class AgendaDAO {
         cs.execute();
     }
 
-
+/*
     // LISTAR TRAZENDO O NOME DA CATEGORIA
     public ResultSet listarAgendaPorUsuario(int usuarioId) throws Exception {
 
@@ -59,5 +59,5 @@ public class AgendaDAO {
         ps.setInt(1, usuarioId);
 
         return ps.executeQuery();
-    }
+    }*/
 }
